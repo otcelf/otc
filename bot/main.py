@@ -1,6 +1,13 @@
 import asyncio
 import logging
 import time
+import os
+import sys
+
+# Добавляем корневую директорию в sys.path для правильных импортов
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if root not in sys.path:
+    sys.path.insert(0, root)
 
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
