@@ -27,3 +27,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Website (should be hosted separately, not with bot)
+site/
